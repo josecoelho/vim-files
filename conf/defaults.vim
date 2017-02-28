@@ -1,7 +1,6 @@
 filetype plugin indent on " required
 
 set number
-set nocompatible
 set encoding=utf-8
 set ruler
 set cb=unnamed
