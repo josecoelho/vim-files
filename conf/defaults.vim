@@ -8,6 +8,9 @@ set cb=unnamed
 syntax on
 colorscheme atom-dark-256
 
+" Enable mouse
+set mouse=a
+
 " Whitespace stuff
 set nowrap
 set tabstop=2
