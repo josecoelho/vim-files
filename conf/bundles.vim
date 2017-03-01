@@ -10,6 +10,9 @@ call dein#add('scrooloose/nerdcommenter')
 call dein#add('mileszs/ack.vim')
 call dein#add('scrooloose/syntastic')
 call dein#add('bling/vim-airline')
+
+" Preview in the command line window
+call dein#add('osyo-manga/vim-over')
 call dein#add('scrooloose/nerdtree')
 call dein#add('Matt-Deacalion/vim-systemd-syntax')
 
