@@ -13,6 +13,11 @@ call dein#add('bling/vim-airline')
 call dein#add('scrooloose/nerdtree')
 call dein#add('Matt-Deacalion/vim-systemd-syntax')
 
+
+
+" Sublime like autocomplete
+call dein#add('Shougo/deoplete.nvim')
+
 " Color schemes
 call dein#add('twerth/ir_black')
 call dein#add('gosukiwi/vim-atom-dark')
