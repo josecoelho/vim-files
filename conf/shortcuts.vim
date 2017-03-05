@@ -5,4 +5,5 @@ vnoremap <CR> :call NERDComment('v', 'Toggle')<CR>
 " deoplete tab-complete
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
+nnoremap <C-Space> :OpenSession<CR>
 

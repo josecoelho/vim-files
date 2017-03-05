@@ -1,4 +1,6 @@
 " General
+
+" Fuzzy search of files
 call dein#add('kien/ctrlp.vim')
 call dein#add('tpope/vim-unimpaired')
 call dein#add('Raimondi/delimitMate')
@@ -7,9 +9,15 @@ call dein#add('tpope/vim-markdown')
 call dein#add('suan/vim-instant-markdown')
 call dein#add('elzr/vim-json')
 call dein#add('scrooloose/nerdcommenter')
+
+" Searching
 call dein#add('mileszs/ack.vim')
 call dein#add('scrooloose/syntastic')
 call dein#add('bling/vim-airline')
+
+" Session control
+call dein#add('xolox/vim-misc')
+call dein#add('xolox/vim-session')
 
 " Preview in the command line window
 call dein#add('osyo-manga/vim-over')
