@@ -28,9 +28,16 @@ npm -g install instant-markdown-d
 
 ## Usage
 
+### Fuzzy Search by files
+
+The lovely fuzzy search of files is available using the plugin [ctrlp](https://github.com/kien/ctrlp.vim)
+
+The shortcut is Ctrl+p
+
 ### The "Project Switcher"
 
-I'm using `vim-session` to keep only one instance of VI open and move between projects. 
+I'm using [vim-ctrlp-session](https://github.com/okcompute/vim-ctrlp-session) to keep only one instance of VI open
+and move between projects. 
 It's like working with workspaces/projects on Sublime.
 
 Usually, when working on a new project, I access the folder using the terminal and open vim there.
@@ -43,11 +50,11 @@ $ vim .
 Then I create a new session for that project
 
 ```vim
-:SaveSession my-project
+:SGit
 ```
 
 From now on, when I want to switch to this specific project I run 
-the command `:OpenSession`, that list all my available sessions and let me choose one.
+the command `:CtrlPSession`, that allows me to fuzzy search for the desired session
+
 To keep this faster, I've setup the shortcut Ctrl+Space to open this "Project Switcher"
 
-When opening VI using the command `vim` the latest open session is going to be restored.

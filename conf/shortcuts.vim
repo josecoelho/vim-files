@@ -5,5 +5,9 @@ vnoremap <CR> :call NERDComment('v', 'Toggle')<CR>
 " deoplete tab-complete
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
-nnoremap <C-Space> :OpenSession<CR>
+" Ctrl + Space to switch between sessions
+nnoremap <C-Space> :CtrlPSession<CR>
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
