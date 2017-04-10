@@ -4,7 +4,7 @@ filetype plugin indent on " required
 let &colorcolumn=join(range(120,999),",")
 
 " Auto remove trailing spaces from some file types
-autocmd FileType c,cpp,java,php,rb,js autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cpp,java,php,ruby,javascript autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Quicfix list opens in a new tab, or change the tab is already opened
 set switchbuf+=usetab,newtab
