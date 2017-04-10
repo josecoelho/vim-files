@@ -1,3 +1,6 @@
+" Disable search highlight when press ESC on command mode
+nnoremap <Esc> :noh<CR>
+
 " Enter toggles a line comment
 nnoremap <CR> :call NERDComment('n', 'Toggle')<CR>
 vnoremap <CR> :call NERDComment('v', 'Toggle')<CR>
