@@ -15,6 +15,7 @@ if dein#load_state('~/.vim/bundle/dein')
   " Add or remove your plugins here:
   source $HOME/.vim/conf/bundles.vim
 
+
   " Required:
   call dein#end()
   call dein#save_state()
@@ -29,3 +30,5 @@ if dein#check_install()
   call dein#install()
 endif
 
+" Default templates setup
+source $HOME/.vim/conf/templates.vim
