@@ -1,6 +1,7 @@
 "dein Scripts-----------------------------
-set nocompatible               " Be iMproved
-
+if &compatible
+  set nocompatible               " Be iMproved
+endif
 " Required:
 set runtimepath+=~/.vim/bundle/dein/repos/github.com/Shougo/dein.vim
 
@@ -11,6 +12,7 @@ if dein#load_state('~/.vim/bundle/dein')
   " Let dein manage dein
   " Required:
   call dein#add('~/.vim/bundle/dein/repos/github.com/Shougo/dein.vim')
+call dein#add('christoomey/vim-tmux-navigator')
 
   " Add or remove your plugins here:
   source $HOME/.vim/conf/bundles.vim

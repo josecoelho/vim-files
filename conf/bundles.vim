@@ -7,7 +7,7 @@ call dein#add('okcompute/vim-ctrlp-session')
 
 " Git wrapper
 call dein#add('tpope/vim-fugitive')
-
+call dein#add('tpope/vim-rhubarb')
 
 call dein#add('tpope/vim-unimpaired')
 call dein#add('Raimondi/delimitMate')
@@ -21,8 +21,13 @@ call dein#add('scrooloose/nerdcommenter')
 
 " Searching
 call dein#add('mileszs/ack.vim')
+call dein#add('jremmen/vim-ripgrep')
+call dein#add('christoomey/vim-tmux-navigator')
 call dein#add('scrooloose/syntastic')
 call dein#add('bling/vim-airline')
+
+" Integrate with TMUX
+call dein#add('christoomey/vim-tmux-navigator')
 
 " Preview in the command line window
 call dein#add('osyo-manga/vim-over')
@@ -31,8 +36,9 @@ call dein#add('osyo-manga/vim-over')
 call dein#add('scrooloose/nerdtree')
 call dein#add('Xuyuanp/nerdtree-git-plugin')
 
+" Syntax
 call dein#add('Matt-Deacalion/vim-systemd-syntax')
-
+call dein#add('tomlion/vim-solidity')
 
 
 " Sublime like autocomplete

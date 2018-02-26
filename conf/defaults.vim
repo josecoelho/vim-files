@@ -1,10 +1,16 @@
 filetype plugin indent on " required
 
+" NeoVim inline substitution feedback
+set inccommand=nosplit
+
+" Show commands
+set showcmd
+
 " Show highlight after 120 chars
 let &colorcolumn=join(range(120,999),",")
 
 " Auto remove trailing spaces from some file types
-autocmd FileType c,cpp,java,php,ruby,javascript autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cpp,java,php,ruby,javascript,ex,exs autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " Quicfix list opens in a new tab, or change the tab is already opened
 set switchbuf+=usetab,newtab
@@ -13,8 +19,11 @@ set switchbuf+=usetab,newtab
 set number
 set encoding=utf-8
 set ruler
+
+" Shared clipboard
 set cb=unnamed
 
+" Highlight Syntax
 syntax on
 colorscheme atom-dark-256
 
