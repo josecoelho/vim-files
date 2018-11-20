@@ -1,7 +1,17 @@
 "dein Scripts-----------------------------
+
+if has('nvim')
+ let g:python2_host_prog = '/usr/local/bin/python'
+ let g:python3_host_prog = '/usr/local/bin/python3'
+endif
+
+" Auto reload changed files
+set autoread
+
 if &compatible
   set nocompatible               " Be iMproved
 endif
+
 " Required:
 set runtimepath+=~/.vim/bundle/dein/repos/github.com/Shougo/dein.vim
 

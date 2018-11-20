@@ -1,10 +1,15 @@
 filetype plugin indent on " required
 
 " NeoVim inline substitution feedback
-set inccommand=nosplit
+if has('nvim')
+  set inccommand=nosplit
+endif
 
 " Show commands
 set showcmd
+
+" Enable backup copy, fix problem with guard over docker: https://github.com/guard/listen/issues/434
+set backupcopy=yes
 
 " Show highlight after 120 chars
 let &colorcolumn=join(range(120,999),",")
@@ -25,6 +30,7 @@ set cb=unnamed
 
 " Highlight Syntax
 syntax on
+
 colorscheme atom-dark-256
 
 " Enable mouse
