@@ -1,4 +1,11 @@
-
+Using NeoVIM
+```
+brew install neovim
+brew install python
+brew install python3
+pip2 install neovim --upgrade
+pip3 install neovim --upgrade
+```
 
 ## Quickstart
 
