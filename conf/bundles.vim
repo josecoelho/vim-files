@@ -44,9 +44,9 @@ call dein#add('Xuyuanp/nerdtree-git-plugin')
 call dein#add('Matt-Deacalion/vim-systemd-syntax')
 call dein#add('tomlion/vim-solidity')
 
-
 " Sublime like autocomplete
 call dein#add('Shougo/deoplete.nvim')
+call dein#add('tbodt/deoplete-tabnine')
 
 " Color schemes
 call dein#add('twerth/ir_black')
