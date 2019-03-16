@@ -31,7 +31,7 @@ set cb=unnamed
 " Highlight Syntax
 syntax on
 
-colorscheme atom-dark-256
+" colorscheme atom-dark-256
 
 " Enable mouse
 set mouse=a

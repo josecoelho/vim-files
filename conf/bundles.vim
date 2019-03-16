@@ -1,74 +1,74 @@
 " General
 
 " Fuzzy search of files
-call dein#add('kien/ctrlp.vim')
+Plug 'kien/ctrlp.vim'
 " Fuzzy search of sessions
-call dein#add('okcompute/vim-ctrlp-session')
+Plug 'okcompute/vim-ctrlp-session'
 
 " Editing
-call dein#add('tpope/vim-surround')
-call dein#add('editorconfig/editorconfig-vim')
+Plug 'tpope/vim-surround'
+Plug 'editorconfig/editorconfig-vim'
 
 " Git wrapper
-call dein#add('tpope/vim-fugitive')
-call dein#add('tpope/vim-rhubarb')
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
-call dein#add('tpope/vim-unimpaired')
-call dein#add('Raimondi/delimitMate')
-call dein#add('tpope/vim-endwise')
-call dein#add('tpope/vim-markdown')
-call dein#add('suan/vim-instant-markdown')
-call dein#add('elzr/vim-json')
+Plug 'tpope/vim-unimpaired'
+Plug 'Raimondi/delimitMate'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-markdown'
+Plug 'suan/vim-instant-markdown'
+Plug 'elzr/vim-json'
 
 " Dealing with comments
-call dein#add('scrooloose/nerdcommenter')
+Plug 'scrooloose/nerdcommenter'
 
 " Searching
-call dein#add('mileszs/ack.vim')
-call dein#add('jremmen/vim-ripgrep')
-call dein#add('christoomey/vim-tmux-navigator')
-call dein#add('scrooloose/syntastic')
-call dein#add('bling/vim-airline')
+Plug 'mileszs/ack.vim'
+Plug 'jremmen/vim-ripgrep'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'scrooloose/syntastic'
+Plug 'bling/vim-airline'
 
 " Integrate with TMUX
-call dein#add('christoomey/vim-tmux-navigator')
+Plug 'christoomey/vim-tmux-navigator'
 
 " Preview in the command line window
-call dein#add('osyo-manga/vim-over')
+Plug 'osyo-manga/vim-over'
 
 "Sidebar
-call dein#add('scrooloose/nerdtree')
-call dein#add('Xuyuanp/nerdtree-git-plugin')
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Syntax
-call dein#add('Matt-Deacalion/vim-systemd-syntax')
-call dein#add('tomlion/vim-solidity')
+Plug 'Matt-Deacalion/vim-systemd-syntax'
+Plug 'tomlion/vim-solidity'
 
 " Sublime like autocomplete
-call dein#add('Shougo/deoplete.nvim')
-call dein#add('tbodt/deoplete-tabnine')
+Plug 'Shougo/deoplete.nvim'
+Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 
 " Color schemes
-call dein#add('twerth/ir_black')
-call dein#add('gosukiwi/vim-atom-dark')
+Plug 'twerth/ir_black'
+Plug 'gosukiwi/vim-atom-dark'
 
 " Ruby/Rails stuff
-call dein#add('vim-ruby/vim-ruby')
-call dein#add('tpope/vim-rails')
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
 
 " JS Stuff
-call dein#add('mustache/vim-mustache-handlebars')
-call dein#add('maksimr/vim-jsbeautify')
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'maksimr/vim-jsbeautify'
 
 " Git stuff
-call dein#add('airblade/vim-gitgutter')
+Plug 'airblade/vim-gitgutter'
 
 " Frontend/Javascript stuff
-call dein#add('kchmck/vim-coffee-script')
-call dein#add('mustache/vim-mustache-handlebars')
+Plug 'kchmck/vim-coffee-script'
+Plug 'mustache/vim-mustache-handlebars'
 
 " Golang
-call dein#add('fatih/vim-go')
+Plug 'fatih/vim-go'
 
 " Elixir
-call dein#add('elixir-lang/vim-elixir')
+Plug 'elixir-lang/vim-elixir'
