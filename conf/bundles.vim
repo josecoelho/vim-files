@@ -6,6 +6,7 @@ call dein#add('kien/ctrlp.vim')
 call dein#add('okcompute/vim-ctrlp-session')
 
 " Editing
+call dein#add('tpope/vim-surround')
 call dein#add('editorconfig/editorconfig-vim')
 
 " Git wrapper
