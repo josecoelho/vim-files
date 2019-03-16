@@ -56,6 +56,10 @@ call dein#add('gosukiwi/vim-atom-dark')
 call dein#add('vim-ruby/vim-ruby')
 call dein#add('tpope/vim-rails')
 
+" JS Stuff
+call dein#add('mustache/vim-mustache-handlebars')
+call dein#add('maksimr/vim-jsbeautify')
+
 " Git stuff
 call dein#add('airblade/vim-gitgutter')
 

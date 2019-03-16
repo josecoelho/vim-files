@@ -9,3 +9,7 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntdastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
+
+
+let g:syntastic_filetype_map = { 'html.handlebars': 'handlebars' }
+
