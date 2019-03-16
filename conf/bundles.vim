@@ -5,6 +5,9 @@ call dein#add('kien/ctrlp.vim')
 " Fuzzy search of sessions
 call dein#add('okcompute/vim-ctrlp-session')
 
+" Editing
+call dein#add('editorconfig/editorconfig-vim')
+
 " Git wrapper
 call dein#add('tpope/vim-fugitive')
 call dein#add('tpope/vim-rhubarb')
