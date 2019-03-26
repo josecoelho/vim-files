@@ -26,12 +26,12 @@ Plug 'scrooloose/nerdcommenter'
 " Searching
 Plug 'mileszs/ack.vim'
 Plug 'jremmen/vim-ripgrep'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/syntastic'
 Plug 'bling/vim-airline'
 
 " Integrate with TMUX
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 
 " Preview in the command line window
 Plug 'osyo-manga/vim-over'
