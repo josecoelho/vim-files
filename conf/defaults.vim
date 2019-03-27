@@ -26,12 +26,12 @@ set encoding=utf-8
 set ruler
 
 " Shared clipboard
-set cb=unnamed
+set clipboard=unnamed
 
 " Highlight Syntax
 syntax on
 
-" colorscheme atom-dark-256
+colorscheme atom-dark-256
 
 " Enable mouse
 set mouse=a
