@@ -1,20 +1,30 @@
-Using NeoVIM
+# Using NeoVIM
+
+## MAC
 ```
 brew install neovim
 brew install python
 brew install python3
+brew install ag
 pip2 install neovim --upgrade
 pip3 install neovim --upgrade
+```
+
+## Ubuntu
+```
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim
+sudo apt-get install python-dev python-pip python3-dev python3-pip
+sudo apt-get install silversearcher-ag
 ```
 
 ## Quickstart
 
 ```
-$ git clone git@github.com:josecoelho/vim-files.git ~/.vim
-$ mkdir ~/.vim/bundle
-$ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-$ sh ./installer.sh ~/.vim/bundle/dein
-$ rm ./installer.sh
+git clone git@github.com:josecoelho/vim-files.git ~/.vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 ### Using NeoVim
@@ -25,7 +35,7 @@ $ rm ./installer.sh
 
 ### Bundle
 
-Using [dein.vim](https://github.com/Shougo/dein.vim)
+Using [Plug](https://github.com/junegunn/vim-plug)
 
 ### For vim-instant-markdown
 
