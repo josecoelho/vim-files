@@ -1,8 +1,14 @@
 "dein Scripts-----------------------------
 
-if has('nvim')
- let g:python2_host_prog = '/usr/local/bin/python'
- let g:python3_host_prog = '/usr/local/bin/python3'
+if has("unix")
+  let s:uname = system("uname -s")
+  if s:uname == "Darwin"
+    " Do Mac stuff here
+    if has('nvim')
+     let g:python2_host_prog = '/usr/local/bin/python'
+     let g:python3_host_prog = '/usr/local/bin/python3'
+    endif
+  endif
 endif
 
 " Auto reload changed files
