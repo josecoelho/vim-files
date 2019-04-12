@@ -17,7 +17,7 @@ let &colorcolumn=join(range(120,999),",")
 " Auto remove trailing spaces from some file types
 autocmd FileType c,cpp,java,php,ruby,javascript,ex,exs autocmd BufWritePre <buffer> %s/\s\+$//e
 
-" Quicfix list opens in a new tab, or change the tab is already opened
+" opens in a new tab, or change the tab is already opened
 set switchbuf+=usetab,newtab
 
 
@@ -32,6 +32,9 @@ set clipboard=unnamed
 syntax on
 
 colorscheme atom-dark-256
+
+" Spell checking 
+set spell spelllang=en_gb
 
 " Enable mouse
 set mouse=a
