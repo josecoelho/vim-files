@@ -33,6 +33,8 @@ syntax on
 
 colorscheme atom-dark-256
 
+let mapleader = ","
+
 " Spell checking 
 set spell spelllang=en_gb
 
@@ -67,13 +69,8 @@ set noswapfile
 let g:default_font = 'Menlo'
 set linespace=4
 
-if has("gui_macvim")
-  let g:default_font_size = 14
-  let g:font_separator = ':h'
-else
-  let g:default_font_size = 12
-  let g:font_separator = '\ '
-endif
+let g:default_font_size = 12
+let g:font_separator = '\ '
 
 if executable('ag')
   " Use ag over grep
