@@ -4,6 +4,9 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'airblade/vim-rooter'
 
+" Easy way to remind shortcuts
+Plug 'liuchengxu/vim-which-key'
+
 " Editing
 Plug 'tpope/vim-surround'
 Plug 'editorconfig/editorconfig-vim'

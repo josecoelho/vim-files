@@ -21,9 +21,6 @@ if exists('g:vscode')
   vnoremap <C-_> :call NERDComment('v', 'Toggle')<CR>
   inoremap <C-_> <Esc>:call NERDComment('n', 'Toggle')<CR>
 else 
-  " Quick return to normal mode
-  inoremap jj <ESC>
-
   " deoplete tab-complete
   inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
