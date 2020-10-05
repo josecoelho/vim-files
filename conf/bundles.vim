@@ -34,12 +34,12 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+
 " Syntax
 Plug 'dense-analysis/ale'
 
-" Sublime like autocomplete
-Plug 'Shougo/deoplete.nvim'
-Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+" Code complete
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Color schemes
 Plug 'twerth/ir_black'
