@@ -54,3 +54,6 @@ Plug 'mustache/vim-mustache-handlebars'
 
 " Git stuff
 Plug 'airblade/vim-gitgutter'
+
+" Rust support
+Plug 'rust-lang/rust.vim'
