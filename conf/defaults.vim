@@ -8,9 +8,6 @@ endif
 " Show commands
 set showcmd
 
-" Enable backup copy, fix problem with guard over docker: https://github.com/guard/listen/issues/434
-set backupcopy=yes
-
 " Show highlight after 120 chars
 let &colorcolumn=join(range(120,999),",")
 
@@ -19,7 +16,6 @@ autocmd FileType c,cpp,java,php,ruby,javascript,ex,exs autocmd BufWritePre <buff
 
 " opens in a new tab, or change the tab is already opened
 set switchbuf+=usetab,newtab
-
 
 set number
 set encoding=utf-8
@@ -54,10 +50,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-" Tab completion
-set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc
-
 " Status bar
 set laststatus=2
 
@@ -71,8 +63,3 @@ set linespace=4
 
 let g:default_font_size = 12
 let g:font_separator = '\ '
-
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-endif
