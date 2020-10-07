@@ -120,5 +120,15 @@ let g:which_key_map['w'] = {
       \ '?' : ['Windows'    , 'fzf-window'],
       \ }
 
+" z is for spelling
+let g:which_key_map.z = {
+      \ 'name' : '+Spell' ,
+      \ ']' : [']s', ']s next misspelled'],
+      \ '[' : [']s', '[s previous misspelled'],
+      \ '=' : ['z='     , 'suggest'],
+      \ 'g' : ['zg'     , 'add word'],
+      \ 'w' : ['zw'     , 'bad spelling'],
+      \}
+
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")
