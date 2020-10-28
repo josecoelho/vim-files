@@ -63,10 +63,21 @@ let g:which_key_map.s = {
 
 let g:which_key_map.l = {
       \ 'name' : '+lsp',
-      \ 'f': [':ALEFix', 'format file'],
-      \ 'r': [':ALEFindReferences', 'find references'],
-      \ 'd': [':ALEGoToDefinition', 'go to definition'],
-      \ 'h': [':ALEHover', 'hover info'],
+      \ 'f': [':call CocAction("format")', 'format buffer'],
+      \ 'F': ['<Plug>(coc-format-selected)', 'format selected'],
+      \ 'qf': ['<Plug>(coc-fix-current)', 'auto fix current line'],
+      \ 'gr': ['<Plug>(coc-references)', 'find references'],
+      \ 'gd': ['<Plug>(coc-definition)', 'go to definition'],
+      \ 'K': [':call <SID>show_documentation()<CR>', 'hover info'],
+      \ 'rn': ['<Plug>(coc-rename)', 'rename'],
+      \ 'j': [':CocNext','next default action'],
+      \ 'k': [':CocPrev','previous default action'],
+      \ 'a': [':CocList diagnostics','list diagnostics'],
+      \ 'e': [':CocList extesions','list extensions'],
+      \ 'c': [':CocList commands','list commands'],
+      \ 'o': [':CocList outline','list buffer symbols'],
+      \ 's': [':CocList -I symbols','workspace symbols'],
+      \ 'p': [':CocListResume','resume latest list'],
       \ }
 
 " g is for Git
@@ -125,9 +136,9 @@ let g:which_key_map.z = {
       \ 'name' : '+Spell' ,
       \ ']' : [']s', ']s next misspelled'],
       \ '[' : [']s', '[s previous misspelled'],
-      \ '=' : ['z='     , 'suggest'],
-      \ 'g' : ['zg'     , 'add word'],
-      \ 'w' : ['zw'     , 'bad spelling'],
+      \ '=' : ['z='     , 'Suggest'],
+      \ 'g' : ['zg'     , 'Add word'],
+      \ 'w' : ['zw'     , 'Bad spelling'],
       \}
 
 " Register which key map
